@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Pemograman Berbasis Web</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <h1>Profil Mahasiswa Sistem Informasi</h1>
+      <nav>
+        <a href="#profil">profil</a> | <a href="#keahlian">keahlian</a> |
+        <a href="#kontak">kontak</a> | <a href="#matakuliah">mata kuliah</a> |
+        <a href="#form-matakuliah">ubah mata kuliah</a>
+      </nav>
+    </header>
+    <main>
+      <!-- profil -->
+      <article id="profil">
+        <h2>tentang Saya</h2>
+        <p>Nama Saya Andika Dwi Saputra</p>
+
+        <h2>Minat Belajar</h2>
+        <ul>
+          <li>Web Development</li>
+          <li>Mobile Development</li>
+          <li>Data Science</li>
+        </ul>
+        <ol>
+          <li>Pemrograman Web</li>
+          <li>Pemrograman Mobile</li>
+          <li>Analisis Data</li>
+        </ol>
+      </article>
+      <!-- keahlian -->
+
+      <article id="keahlian">
+        <h2>Keahlian</h2>
+        <p>Beberapa keahlian yang saya miliki:</p>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Python</li>
+        </ul>
+
+        <!-- kontak -->
+      </article>
+      <aside id="kontak">
+        <a href="https://www.google.com" target="_blank">Kunjungi Google</a
+        ><br />
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiHepizbcP30SG2hUfoqVS4z_WDNAuIHLQqIGu4CVxuQ&s=10"
+          alt="Placeholder Image"
+          width="200"
+          height="200"
+        />
+      </aside>
+
+      <section id="matakuliah">
+        <h2>Jadwal Mata Kuliah Sistem Informasi</h2>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Hari</th>
+              <th>Jam</th>
+              <th>Mata Kuliah</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Senin</td>
+              <td>08.00 - 10.00</td>
+              <td>Pemrograman Web</td>
+            </tr>
+            <tr>
+              <td>Selasa</td>
+              <td>10.00 - 12.00</td>
+              <td>Basis Data</td>
+            </tr>
+            <tr>
+              <td>Rabu</td>
+              <td>13.00 - 15.00</td>
+              <td>Analisis dan Perancangan Sistem</td>
+            </tr>
+            <tr>
+              <td>Kamis</td>
+              <td>08.00 - 10.00</td>
+              <td>Manajemen Sistem Informasi</td>
+            </tr>
+            <tr>
+              <td>Jumat</td>
+              <td>09.00 - 11.00</td>
+              <td>Statistika</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Ubah Jadwal Mata Kuliah</h2>
+        <form id="form-matakuliah">
+          <label for="pilih-jadwal">Pilih jadwal:</label>
+          <select id="pilih-jadwal" name="pilih-jadwal">
+            <option>Senin - Pemrograman Web</option>
+            <option>Selasa - Basis Data</option>
+            <option>Rabu - Analisis dan Perancangan Sistem</option>
+            <option>Kamis - Manajemen Sistem Informasi</option>
+            <option>Jumat - Statistika</option>
+          </select>
+          <br />
+
+          <label for="hari">Hari:</label>
+          <input type="text" id="hari" name="hari" />
+          <br />
+
+          <label for="jam">Jam:</label>
+          <input type="text" id="jam" name="jam" placeholder="08.00 - 10.00" />
+          <br />
+
+          <label for="nama-matakuliah">Mata Kuliah:</label>
+          <input type="text" id="nama-matakuliah" name="nama-matakuliah" />
+          <br />
+
+          <button type="submit">Ubah Jadwal</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar CSS Selector Dasar</title>
+    <!-- eksternal css : menambahkan eksternal file .css ke dalam kode html -->
+    <link rel="stylesheet" href="belajar_style.css" />
+
+    <!-- internal CSS : menambahkan kode css di file yang sama, dgn meyebut selector CSS -->
+    <style>
+      /* body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;   jarak antara elemen dengan batas luar (layar)  
+        }
+        #hero{
+            padding: 32px;  jarak antara elemen dengan onten di dalamnya 
+        } */
+    </style>
+  </head>
+  <body>
+    <header id="hero" style="text-align: center">
+      <!-- Inline CSS : menyematkan kode css langsung berada di elemen -->
+      <h1>Belajar CSS Selector</h1>
+      <p>selector digunakan untuk memilih elemen html yang akan diberi gaya</p>
+    </header>
+    <main>
+      <section class="card utama">
+        <h2>Selector Element</h2>
+        <p>Selector element memilih semua elemen html dengan tag tertentu</p>
+      </section>
+      <section class="card">
+        <h2>Selector Class</h2>
+        <p class="text-penting">
+          class dapat digunakan berulang kali pada banyak elemen
+        </p>
+      </section>
+      <section class="card">
+        <h2>Descendant Class</h2>
+        <p>selector data memilih elemen yang berada di dalam elemen lain</p>
+      </section>
+    </main>
+  </body>
+</html>

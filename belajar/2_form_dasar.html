@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <h1>Formulir Data Mahasiswa SI</h1>
+    <form action="" method="post">
+      <fieldset>
+        <legend>Data Mahasiswa</legend>
+        <label for="nama">Nama Mahasiswa:</label> <br />
+        <input
+          type="text"
+          id="nama"
+          name="nama_mhs"
+          placeholder="Ketik Nama Anda..."
+          minlength="3"
+          required
+          autofocus
+        /><br />
+        <!-- minlength = minimal panjang karakter -->
+        <!-- required = wajib diisi -->
+        <!-- autofocus = fokus otomatis -->
+
+        <label for="nim">NIM:</label><br />
+        <input
+          type="text"
+          id="nim"
+          name="nim_mhs"
+          placeholder="Ketik NIM Anda..."
+          required
+        />
+        <br />
+
+        <label for="email">Email:</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email_mhs"
+          placeholder="Ketik Email Anda..."
+          required
+        />
+        <br />
+
+        <label for="jenis_kelamin">Jenis Kelamin:</label><br />
+        <input type="radio" name="jenis_kelamin" value="L" />Laki-laki |
+        <input type="radio" name="jenis_kelamin" value="P" />Perempuan <br />
+
+        <label for="angkatan">Angkatan:</label><br />
+        <input
+          type="number"
+          name="angkatan"
+          min="2020"
+          max="2030"
+          placeholder="Isi Angka"
+          required
+        />
+        <br />
+
+        <label for="prodi">Program Studi:</label><br />
+        <select name="prodi" id="prodi">
+          <option value="">--Pilih Program Studi--</option>
+          <option value="si">Sistem Informasi</option>
+          <option value="ti">Teknik Informatika</option>
+          <option value="te">Teknik Elektro</option>
+        </select>
+        <br />
+      </fieldset>
+      <fieldset>
+        <legend>Minat</legend>
+        <label for="topik">Topik yang diminatin</label> <br />
+        <label><input type="checkbox" name="topik[]" value="html" />HTML</label>
+        <br />
+        <label><input type="checkbox" name="topik[]" value="css" />CSS</label>
+        <br />
+        <label
+          ><input type="checkbox" name="topik[]" value="js" />JavaScript</label
+        >
+        <br />
+
+        <label for="alasan">Alasan Mngikuti Kegiatan</label> <br />
+        <textarea
+          name="alasan"
+          id="alasan"
+          colspan="200"
+          rowspan="10"
+        ></textarea>
+        <br />
+      </fieldset>
+
+      <input type="checkbox" name="persetujuan" required>
+      <label> Saya menyatakan data diisi dengan benar</label> <br>
+
+      <button type="submit">Kirim</button>
+      <button type="reset">Batal</button>
+    </form>
+  </body>
+</html>

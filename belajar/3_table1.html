@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Membuat Table Sederhana</title>
+  </head>
+  <body>
+    <h1>Membuat Table Sederhana</h1>
+    <table border="1">
+      <tr>
+        <!-- tr : table row -->
+        <td>No</td>
+        <!-- td : table data -->
+        <td>Nama</td>
+        <td>NIM</td>
+        <td>Program Studi</td>
+        <td>Angkatan</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Dika</td>
+        <td>F1E125016</td>
+        <td>Sistem Informasi</td>
+        <td>2025</td>
+      </tr>
+    </table>
+    <br /><br />
+
+    <table border="1">
+      <caption>
+        Jadwal Workshop
+      </caption>
+      <thead>
+        <tr>
+          <th rowspan="2">No</th>
+          <th rowspan="2">Sesi</th>
+          <th rowspan="2">Waktu</th>
+          <th colspan="3">Program Studi</th>
+        </tr>
+        <tr>
+          <th>Sistem Informasi</th>
+          <th>Teknik Informatika</th>
+          <th>Teknik Elektro</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>HTML</td>
+          <td>08.00 WIB</td>
+          <td>v</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>CSS</td>
+          <td>09.30 WIB</td>
+          <td></td>
+          <td>v</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br /><br /><br />
+
+    <!-- menambahkan figur gambar -->
+    <figure>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbWqOzbQJ9hjWFVMi-FyH8Ib9mPDxJ7eZluBMuUl1xGw&s=10"
+        alt="Ilustrasi"
+      />
+      <figcaption>Poster Belajar Web Dasar</figcaption>
+    </figure>
+    <audio src="audio.mp3" controls></audio>
+    <!-- menampilkan video -->
+    <video src="" controls poster="poster.jpg">
+      <source src="video.mp4" type="video/mp4" />
+    </video>
+  </body>
+</html>

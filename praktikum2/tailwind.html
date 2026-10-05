@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pesona Wisata Alam</title>
+
+    <!-- Memanggil Tailwind CSS dari CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Konfigurasi kustom untuk warna tema (opsional tapi disarankan) -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              wisata: {
+                50: "#f0fdf4",
+                600: "#16a34a",
+                700: "#15803d",
+                900: "#14532d",
+              },
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-gray-50 text-gray-800 font-sans scroll-smooth">
+    <!-- NAVBAR -->
+    <header class="bg-wisata-600 text-white sticky top-0 z-50 shadow-md">
+      <div
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <a href="#" class="text-2xl font-bold tracking-wide">Pesona Wisata</a>
+
+        <!-- Menu Navigasi Desktop -->
+        <nav class="hidden md:flex space-x-6 font-medium">
+          <a href="#" class="hover:text-wisata-50 transition">Beranda</a>
+          <a href="#destinasi" class="hover:text-wisata-50 transition"
+            >Destinasi</a
+          >
+          <a href="#" class="hover:text-wisata-50 transition">Paket Liburan</a>
+        </nav>
+
+        <!-- Tombol Hamburger Mobile (Hanya ilustrasi visual) -->
+        <button class="md:hidden text-white focus:outline-none">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative bg-wisata-900 text-white">
+      <!-- Gambar Background -->
+      <img
+        src="assets/pegunungan.jpg"
+        alt="Pemandangan Alam"
+        class="absolute inset-0 w-full h-full object-cover opacity-50"
+      />
+
+      <!-- Konten Hero -->
+      <div class="relative container mx-auto px-6 py-32 text-center md:py-40">
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">
+          Jelajahi Keindahan Alam
+        </h1>
+        <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto drop-shadow-md">
+          Temukan destinasi wisata terbaik untuk liburan akhir pekanmu bersama
+          orang tercinta di seluruh penjuru negeri.
+        </p>
+        <a
+          href="#destinasi"
+          class="inline-block bg-white text-wisata-700 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 hover:scale-105 transition transform duration-300"
+        >
+          Mulai Petualangan
+        </a>
+      </div>
+    </section>
+
+    <!-- MAIN SECTION (DESTINASI WISATA) -->
+    <main id="destinasi" class="container mx-auto px-6 py-16 md:py-24">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-wisata-700 mb-2">
+          Destinasi Favorit
+        </h2>
+        <p class="text-gray-500">
+          Pilih petualanganmu selanjutnya dari rekomendasi terbaik kami
+        </p>
+      </div>
+
+      <!-- Grid Card Tailwind -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Kartu 1 -->
+        <div
+          class="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-xl transition"
+        >
+          <div class="overflow-hidden h-56">
+            <img
+              src="assets/sejarah.jpg"
+              alt="Wisata Sejarah"
+              class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Wisata Sejarah</h3>
+            <p class="text-gray-600 mb-4 line-clamp-2">
+              Kunjungi candi-candi megah dan pelajari warisan peradaban yang
+              telah berdiri ratusan tahun.
+            </p>
+            <a
+              href="#"
+              class="inline-block text-wisata-600 font-semibold hover:text-wisata-700"
+              >Lihat Detail &rarr;</a
+            >
+          </div>
+        </div>
+
+        <!-- Kartu 2 -->
+        <div
+          class="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-xl transition"
+        >
+          <div class="overflow-hidden h-56">
+            <img
+              src="assets/bahari.jpeg"
+              alt="Wisata Bahari"
+              class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Wisata Bahari</h3>
+            <p class="text-gray-600 mb-4 line-clamp-2">
+              Nikmati deburan ombak, pasir putih bersih, dan indahnya terumbu
+              karang bawah laut.
+            </p>
+            <a
+              href="#"
+              class="inline-block text-wisata-600 font-semibold hover:text-wisata-700"
+              >Lihat Detail &rarr;</a
+            >
+          </div>
+        </div>
+
+        <!-- Kartu 3 -->
+        <div
+          class="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-xl transition"
+        >
+          <div class="overflow-hidden h-56">
+            <img
+              src="assets/pegunungan.jpg"
+              alt="Wisata Pegunungan"
+              class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">
+              Wisata Pegunungan
+            </h3>
+            <p class="text-gray-600 mb-4 line-clamp-2">
+              Rasakan sejuknya udara segar dan saksikan pemandangan magis dari
+              atas ketinggian.
+            </p>
+            <a
+              href="#"
+              class="inline-block text-wisata-600 font-semibold hover:text-wisata-700"
+              >Lihat Detail &rarr;</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-wisata-900 text-wisata-50 py-8 text-center">
+      <div class="container mx-auto px-6">
+        <p>&copy; 2026 Pesona Wisata Alam. Dibuat dengan Tailwind CSS.</p>
+      </div>
+    </footer>
+  </body>
+</html>

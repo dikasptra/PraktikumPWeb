@@ -1,0 +1,50 @@
+/* Grouping Selector: Memilih beberapa elemen sekaligus */
+h1,
+h2,
+h3 {
+  color: #1e293b;
+  margin-bottom: 10px;
+}
+
+/* ID Selector: Memilih elemen dengan ID tertentu (menggunakan #) */
+#hero {
+  background-color: #dbeafe; 
+  padding: 60px 20px;
+  text-align: center;
+  border-bottom: 4px solid #2563eb;
+}
+
+/* Class Selector: Memilih elemen dengan class tertentu (menggunakan .) */
+.card {
+  background: #ffffff;
+  margin: 20px auto;
+  padding: 24px;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); 
+}
+
+/* Multiple / Grouping Class Selector */
+.card.form-utama {
+  border-top: 6px solid #22c55e; 
+}
+
+/* Descendant Selector: Memilih elemen yang berada di dalam elemen lain */
+#produk .card p {
+  color: #64748b; 
+  line-height: 1.6;
+}
+
+/* Element Selector: Memilih berdasarkan tag HTML dasar */
+section {
+  padding: 40px 20px;
+}
+
+/* ID sections: Membuat semua section ber-ID memiliki teks rata tengah */
+section[id] {
+  text-align: center;
+}
+
+.teks-tengah {
+  text-align: center;
+}

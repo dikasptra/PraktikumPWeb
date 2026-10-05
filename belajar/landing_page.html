@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bibit - Aplikasi Investasi Reksadana & SBN</title>
+
+    <!-- External CSS: Menghubungkan ke file style.css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Internal CSS: Disematkan langsung di file HTML menggunakan tag <style> -->
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        background-color: #f8fafc;
+        color: #0f172a;
+      }
+      nav a {
+        text-decoration: none;
+        color: #1d4ed8;
+        font-weight: bold;
+        margin: 0 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Inline CSS: Ditulis langsung di dalam atribut elemen menggunakan style="..." -->
+    <header
+      style="
+        background-color: #ffffff;
+        padding: 20px;
+        text-align: center;
+        border-bottom: 2px solid #e2e8f0;
+      "
+    >
+      <div class="logo">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmW0DUqh3M_dDhmtraxA2tj7BX5hS0wgN1ptrGHWBrZhYZKTPsnoBavAM&s=10"
+          alt="Logo Bibit"
+          width="150"
+        />
+      </div>
+
+      <nav>
+        <a href="#produk">Produk</a> | <a href="#promo">Promo</a> |
+        <a href="#artikel">Artikel</a> |
+        <a href="#kontak">Kontak</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero">
+        <div class="hero-teks">
+          <h1>Mulai Investasi Tanpa Mikir.</h1>
+          <p>
+            Aplikasi investasi reksa dana, SBN, dan saham untuk pemula. Biarkan
+            teknologi Robo Advisor kami merancang portofolio optimal untukmu.
+          </p>
+        </div>
+      </section>
+
+      <section id="kepercayaan" class="teks-tengah">
+        <p>Telah Berizin dan Diawasi Oleh:</p>
+        <img
+          src="https://images.seeklogo.com/logo-png/28/2/ojk-indonesia-logo-png_seeklogo-285338.png"
+          alt="Logo OJK"
+          width="200"
+        />
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/6/65/Logo_Kementerian_Komunikasi_dan_Digital_Republik_Indonesia_%282024%29.svg"
+          alt="Logo Kominfo"
+          width="200"
+        />
+      </section>
+
+      <section id="produk">
+        <h2>Kenapa Investasi di Bibit?</h2>
+
+        <div class="daftar-fitur">
+          <!-- Menambahkan class="card" untuk di-styling oleh Class Selector -->
+          <article class="card">
+            <h3>Didukung Robo Advisor</h3>
+            <p>
+              Mulai investasi langsung sesuai profil risikomu tanpa perlu
+              bingung memilih.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Mulai dari Rp10.000</h3>
+            <p>
+              Modal kecil tidak jadi halangan. Kamu bisa mulai berinvestasi
+              seharga secangkir kopi.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Nabung Rutin (Autodebet)</h3>
+            <p>
+              Konsisten berinvestasi setiap bulan secara otomatis langsung dari
+              rekeningmu.
+            </p>
+          </article>
+        </div>
+      </section>
+      <hr />
+
+      <section id="promo" class="teks-tengah">
+        <h2>Promo</h2>
+        <p>
+          Dapatkan informasi promo dan penawaran investasi terbaru dari Bibit.
+        </p>
+      </section>
+      <hr />
+
+      <section id="artikel">
+        <h2>Artikel</h2>
+        <p>
+          Baca tips sederhana untuk mulai berinvestasi dengan lebih percaya
+          diri.
+        </p>
+
+        <article class="card">
+          <h3>Mengenal Reksa Dana untuk Pemula</h3>
+          <p>
+            Reksa dana adalah wadah yang mengumpulkan dana dari banyak investor
+            untuk dikelola oleh manajer investasi. Kamu dapat mulai dengan modal
+            kecil dan memilih jenis reksa dana sesuai tujuanmu.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Pahami Profil Risiko Sebelum Berinvestasi</h3>
+          <p>
+            Setiap orang memiliki tingkat kenyamanan yang berbeda terhadap
+            perubahan nilai investasi. Kenali profil risikomu agar pilihan
+            investasi tetap sesuai dengan tujuan dan kemampuan finansialmu.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Manfaat Investasi Secara Rutin</h3>
+          <p>
+            Investasi rutin membantu membangun kebiasaan dan menjaga konsistensi
+            dalam mencapai tujuan keuangan. Tentukan nominal yang terjangkau,
+            lalu lakukan secara berkala.
+          </p>
+        </article>
+      </section>
+      <hr />
+
+      <section id="kontak" class="card form-utama">
+        <h2>Kontak Kami</h2>
+        <p>Silakan isi data berikut jika ingin menghubungi kami.</p>
+
+        <form action="" method="post">
+          <fieldset>
+            <legend>Kontak Kami</legend>
+            <label for="nama_kontak">Nama:</label><br />
+            <input
+              type="text"
+              id="nama_kontak"
+              name="nama_kontak"
+              placeholder="Ketik nama Anda..."
+              minlength="3"
+              required
+            />
+            <br /><br />
+
+            <label for="email_kontak">Email:</label><br />
+            <input
+              type="email"
+              id="email_kontak"
+              name="email_kontak"
+              placeholder="Ketik email Anda..."
+              required
+            />
+            <br /><br />
+
+            <button type="submit">Kirim</button>
+            <button type="reset">Batal</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer class="teks-tengah">
+      <hr />
+      <div class="info-perusahaan">
+        <h2>Bibit</h2>
+        <p>PT Bibit Tumbuh Bersama</p>
+        <p>Gedung Standard Chartered, Jakarta Selatan</p>
+      </div>
+      <div class="hak-cipta">
+        <p>&copy; 2026 Bibit. Hak Cipta Dilindungi.</p>
+      </div>
+    </footer>
+  </body>
+</html>

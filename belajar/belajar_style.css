@@ -1,0 +1,39 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;   /* jarak antara elemen dengan batas luar (layar) */
+    background: #7b7a7a;
+    color: #181818;
+}
+
+/* id selector  */
+#hero{
+    padding: 32px;  /* jarak antara elemen dengan onten di dalamnya  */
+    text-align: center;
+    background: #d7782a;
+    color: #fff;
+}
+
+/* class selector */
+.card{
+    background: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* multiple class */
+.card.utama{
+    border-left: 8px solid #d7782a;
+}
+
+/* descendant class */
+.card h2{
+    color: #0d0d0c;
+}
+
+.card .text-penting{
+    color: #2e1f13;
+    font-weight: bold;
+}
